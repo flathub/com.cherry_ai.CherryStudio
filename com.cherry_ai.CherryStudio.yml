@@ -44,8 +44,8 @@ modules:
         dest-filename: cherrystudio.AppImage
         only-arches:
           - x86_64
-        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.0.6-x86_64.AppImage
-        sha256: 02926266b75b936e4ff8f3a0ec85757169ee0839e5813846823e0ffed0126362
+        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.1.5-x86_64.AppImage
+        sha256: fc3a9f6161494b966919991e35e3951416a83258bb8a68cd93156e2cc5947fe7
         x-checker-data:
           type: electron-updater
           url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/latest-linux.yml
@@ -53,8 +53,8 @@ modules:
         dest-filename: cherrystudio.AppImage
         only-arches:
           - aarch64
-        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.0.6-arm64.AppImage
-        sha256: 1a312755cd12a9dab9bf4266c8f041205521b5a58dd1e5fd2c279255231d5d95
+        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.1.5-arm64.AppImage
+        sha256: c2d647a53c976e3df30d6f55bff904eca99c269be58c735ac5ba23a71b54733a
         x-checker-data:
           type: electron-updater
           url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/latest-linux-arm64.yml
