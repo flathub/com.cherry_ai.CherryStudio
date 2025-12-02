@@ -20,4 +20,4 @@ FLAGS+=(
     '--wayland-text-input-version=3'
 )
 
-env TMPDIR="${XDG_CACHE_HOME}" zypak-wrapper /app/cherrystudio/cherrystudio "${FLAGS[@]}" "$@"
+env TMPDIR="${XDG_CACHE_HOME}" zypak-wrapper "/app/cherrystudio/Cherry Studio" "${FLAGS[@]}" "$@"
