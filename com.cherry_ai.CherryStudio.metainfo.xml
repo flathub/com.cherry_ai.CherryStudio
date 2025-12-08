@@ -300,4 +300,9 @@
   <provides>
     <binary>AppRun</binary>
   </provides>
+  <keywords>
+    <keyword>studio assistant</keyword>
+    <keyword>artificial intelligence producer</keyword>
+    <keyword>music production software</keyword>
+  </keywords>
 </component>
