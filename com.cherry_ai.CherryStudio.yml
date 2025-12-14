@@ -25,16 +25,16 @@ modules:
       - chmod +x cherrystudio.AppImage
       - ./cherrystudio.AppImage --appimage-extract
       # Install the files from the extracted content
-      - install -Dm644 squashfs-root/cherrystudio.desktop /app/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 "squashfs-root/Cherry Studio.desktop" /app/share/applications/${FLATPAK_ID}.desktop
       # Copy all icons from squashfs-root/usr/share/icons/hicolor
-      - cp -r squashfs-root/usr/share/icons/hicolor /app/share/icons/
+      - cp -r "squashfs-root/usr/share/icons/hicolor" /app/share/icons/
       # Copy and rename icons to match app-id for each required size
-      - install -Dm644 squashfs-root/usr/share/icons/hicolor/128x128/apps/cherrystudio.png
-        /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
-      - install -Dm644 squashfs-root/usr/share/icons/hicolor/256x256/apps/cherrystudio.png
-        /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
-      - install -Dm644 squashfs-root/usr/share/icons/hicolor/512x512/apps/cherrystudio.png
-        /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/128x128/apps/Cherry
+        Studio.png" /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/256x256/apps/Cherry
+        Studio.png" /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/512x512/apps/Cherry
+        Studio.png" /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
 
       - install -Dm644 com.cherry_ai.CherryStudio.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
 
@@ -53,8 +53,8 @@ modules:
         dest-filename: cherrystudio.AppImage
         only-arches:
           - x86_64
-        url: https://github.com/CherryHQ/cherry-studio/releases/download/v1.5.7/Cherry-Studio-1.5.7-x86_64.AppImage
-        sha256: 5db1f44e78ba7d765536313649f8f2121775b6daef0b75acdf0b468d54b60616
+        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.7.3-x86_64.AppImage
+        sha256: fdbf5eefd2eebddbc7ac8610391ae5d59553db97a74cc335917f7978252b2fcd
         x-checker-data:
           type: electron-updater
           url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/latest-linux.yml
@@ -62,8 +62,8 @@ modules:
         dest-filename: cherrystudio.AppImage
         only-arches:
           - aarch64
-        url: https://github.com/CherryHQ/cherry-studio/releases/download/v1.5.7/Cherry-Studio-1.5.7-arm64.AppImage
-        sha256: 6181ac65e6a77f4c7c228ac4f891ae8ce5f7e3d27edf44e8522e9c464106c4fa
+        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.7.3-arm64.AppImage
+        sha256: 5146d560732f9be975632d957e93e2ea5f2880a50a43f81525f8ee59309d724e
         x-checker-data:
           type: electron-updater
           url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/latest-linux-arm64.yml
