@@ -29,12 +29,9 @@ modules:
       # Copy all icons from squashfs-root/usr/share/icons/hicolor
       - cp -r "squashfs-root/usr/share/icons/hicolor" /app/share/icons/
       # Copy and rename icons to match app-id for each required size
-      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/128x128/apps/Cherry
-        Studio.png" /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
-      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/256x256/apps/Cherry
-        Studio.png" /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
-      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/512x512/apps/Cherry
-        Studio.png" /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/128x128/apps/CherryStudio.png" /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/256x256/apps/CherryStudio.png" /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/512x512/apps/CherryStudio.png" /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
 
       - install -Dm644 com.cherry_ai.CherryStudio.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
 
