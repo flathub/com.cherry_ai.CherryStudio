@@ -8,7 +8,7 @@
     <name>CherryHQ</name>
   </developer>
   <metadata_license>MIT</metadata_license>
-  <project_license>Apache-2.0</project_license>
+  <project_license>AGPL-3.0-only</project_license>
   <update_contact>kangfenmao@gmail.com</update_contact>
   <project_group>CherryHQ</project_group>
   <description>
@@ -311,7 +311,7 @@
   </releases>
   <url type="homepage">https://cherry-ai.com/</url>
   <url type="bugtracker">https://github.com/CherryHQ/cherry-studio/issues</url>
-  <url type="donation">https://github.com/CherryHQ/cherry-studio/blob/main/docs/sponsor.md</url>
+  <url type="donation">https://github.com/CherryHQ/cherry-studio/blob/main/docs/zh/guides/sponsor.md</url>
   <url type="contribute">https://github.com/CherryHQ/cherry-studio/blob/main/CONTRIBUTING.md</url>
   <categories>
     <category>Utility</category>
