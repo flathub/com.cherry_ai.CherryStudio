@@ -25,7 +25,7 @@ modules:
       - chmod +x cherrystudio.AppImage
       - ./cherrystudio.AppImage --appimage-extract
       # Install the files from the extracted content
-      - install -Dm644 "squashfs-root/Cherry Studio.desktop" /app/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 "squashfs-root/CherryStudio.desktop" /app/share/applications/${FLATPAK_ID}.desktop
       # Copy all icons from squashfs-root/usr/share/icons/hicolor
       - cp -r "squashfs-root/usr/share/icons/hicolor" /app/share/icons/
       # Copy and rename icons to match app-id for each required size
