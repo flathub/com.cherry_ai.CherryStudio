@@ -29,9 +29,12 @@ modules:
       # Copy all icons from squashfs-root/usr/share/icons/hicolor
       - cp -r "squashfs-root/usr/share/icons/hicolor" /app/share/icons/
       # Copy and rename icons to match app-id for each required size
-      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/128x128/apps/CherryStudio.png" /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
-      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/256x256/apps/CherryStudio.png" /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
-      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/512x512/apps/CherryStudio.png" /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/128x128/apps/CherryStudio.png"
+        /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/256x256/apps/CherryStudio.png"
+        /app/share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
+      - install -Dm644 "squashfs-root/usr/share/icons/hicolor/512x512/apps/CherryStudio.png"
+        /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
 
       - install -Dm644 com.cherry_ai.CherryStudio.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
 
@@ -50,8 +53,8 @@ modules:
         dest-filename: cherrystudio.AppImage
         only-arches:
           - x86_64
-        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.7.15-x86_64.AppImage
-        sha256: 45c191ca79656f539e4912bcda8365d49845fa97a10194edaaf1bcd83a0ba1e6
+        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.7.16-x86_64.AppImage
+        sha256: 63685723a3a8e2018424e72f181f254510bff05b68927f1cf4aa04802d6b26c6
         x-checker-data:
           type: electron-updater
           url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/latest-linux.yml
@@ -59,8 +62,8 @@ modules:
         dest-filename: cherrystudio.AppImage
         only-arches:
           - aarch64
-        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.7.15-arm64.AppImage
-        sha256: 40a2032bac2967961fa80bad31df58a5c15242b4e5933d4a3749f11c7b3dca4c
+        url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/Cherry-Studio-1.7.16-arm64.AppImage
+        sha256: 1beee92a2190c27cd4c58ae820c22eb2e4f8d6db77eb1e125ae0f707f4c858ab
         x-checker-data:
           type: electron-updater
           url: https://github.com/CherryHQ/cherry-studio/releases/latest/download/latest-linux-arm64.yml
