@@ -1,9 +1,9 @@
 app-id: com.cherry_ai.CherryStudio
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '25.08'
+base-version: '26.08'
 command: run.sh
 separate-locales: false
 finish-args:
@@ -27,6 +27,8 @@ modules:
       # Install the files from the extracted content
       - install -Dm644 "squashfs-root/CherryStudio.desktop" /app/share/applications/${FLATPAK_ID}.desktop
       # Copy all icons from squashfs-root/usr/share/icons/hicolor
+      # mkdir first: otherwise cp renames hicolor to icons, misplacing the tree
+      - mkdir -p /app/share/icons
       - cp -r "squashfs-root/usr/share/icons/hicolor" /app/share/icons/
       # Copy and rename icons to match app-id for each required size
       - install -Dm644 "squashfs-root/usr/share/icons/hicolor/128x128/apps/CherryStudio.png"
