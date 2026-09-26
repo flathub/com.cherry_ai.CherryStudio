@@ -404,14 +404,11 @@
   </releases>
   <url type="homepage">https://cherry-ai.com/</url>
   <url type="bugtracker">https://github.com/CherryHQ/cherry-studio/issues</url>
-  <url type="donation">https://github.com/CherryHQ/cherry-studio/blob/main/docs/zh/guides/sponsor.md</url>
+  <url type="donation">https://github.com/CherryHQ/cherry-studio/blob/main/docs/sponsor.md</url>
   <url type="contribute">https://github.com/CherryHQ/cherry-studio/blob/main/CONTRIBUTING.md</url>
   <categories>
     <category>Utility</category>
   </categories>
   <content_rating type="oars-1.1"/>
   <launchable type="desktop-id">com.cherry_ai.CherryStudio.desktop</launchable>
-  <provides>
-    <binary>AppRun</binary>
-  </provides>
 </component>
